@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encrypter/Decrypter</title>
+</head>
+
+<body>
+
+    <header>
+    
+        <img  class="logo_joao" src="./assets/logo.png" alt="Logo OctDev">
+    </header>
+
+<main>
+
+    <section>
+
+        <textarea class="text_area" cols="41" rows="4" placeholder="Digite seu texto..."></textarea>
+        <div class="info">
+            <h6 class="info">Apenas letras minúsculas e sem ascentos</h6>
+        </div>
+        <div class="btns">
+            <button class="btn_encrypt" onclick="btnEncrypt()">Encrypt</button>
+            <button class="btn_decrypt" onclick="btnDecrypt()">Decrypt</button>
+        </div>
+
+    </section>
+
+    <section>
+        <textarea class="text_resultado" cols="20" rows="10"></textarea>
+            <button class="btn_copy" onclick="copyText()">Copy</button>
+    </section>
+</main>
+    <script src="./script.js"></script>
+</body>
+</html>

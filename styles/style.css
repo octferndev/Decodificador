@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200&family=Oswald:wght@600&display=swap');
+
+:root {
+    --cor-1: #ffffff;
+    --cor-2: #ffffff;
+    --cor-3: #237da1;
+    --cor-4: #000000;
+    --cor-5: #00025a;
+    --cor-6: #00025a;
+    --cor-7: #00025a;
+    --fonte-1: 'Oswald', sans-serif;
+    --fonte-2: 'Montserrat', sans-serif;
+    --fonte-3: 'Krona One', sans-serif;
+}
+
+* {
+    font-family: var(--fonte-2);
+    background-color: var(--cor-1);
+    font-size: 26px;
+    font-weight: 100px;
+}
+
+.logo_joao {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 7%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text_area {
+    border-radius: 10px;
+    resize: none;
+    color: var(--cor-4);
+    margin-top: 80px;
+    text-transform: lowercase;
+}
+
+.text_area:hover {
+    scale: 1.1;
+}
+
+::placeholder { 
+    color: var(--cor-4);
+}
+
+.text_area:focus {
+    outline: none;
+}
+
+.text_resultado {
+    resize: none;
+    background-color: var(--cor-2);
+    color: var(--cor-1);
+    background-image: url(/assets/boneco.png.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius:24px;
+    border: none;
+    color: var(--cor-4);
+    margin-left: 98px;
+    margin-top: 28px;
+    padding-left: 20px;
+}
+
+.text_resultado:focus {
+    outline: none;
+}
+
+.btns {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn_encrypt, .btn_decrypt, .btn_copy {
+    background-color: var(--cor-3);
+    cursor: pointer;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    margin-left: 95px;
+    font-family: var(--fonte-3);
+    color: var(--cor-1);
+}
+
+.btn_encrypt:hover {
+    scale: 1.1;
+    background-color: var(--cor-5);
+}
+
+.btn_decrypt:hover {
+    scale: 1.1;
+    background-color: var(--cor-7);
+}
+
+.btn_copy:hover {
+    scale: 1.1;
+    background-color: var(--cor-6);
+}
+
+.btn_copy {
+    margin-top: 35px;
+    margin-left: 213px;
+}
+
+.info {
+    font-size: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0 auto; 
+        max-width: 90%; 
+    }
+
+    .text_area {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .btns {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn_encrypt, .btn_decrypt, .btn_copy {
+        margin-left: 0;
+        margin-bottom: 10px; 
+        width: 90%;
+    }
+
+    .btn_copy {
+        margin-top: 20px; 
+        margin-left: 0; 
+    }
+
+    .text_resultado {
+        width: 90%;
+        margin-top: 20px; 
+        margin-left: 0;
+    }
+}
